@@ -1,0 +1,309 @@
+header{
+     
+    overflow: hidden;
+}
+ 
+ 
+/****************/   
+/* Styling Logo */
+/****************/
+
+#logo{
+    float: left;
+    padding: none;
+    margin: none;
+    height: 100px;
+}
+ 
+#logo img{
+    z-index=10;
+    float: left;
+    padding: 10px 10px;
+    position:absolute;
+    height:110px
+} 
+ 
+/***************************/
+/* Styling Navigation Menu */
+/***************************/
+#menu{
+    float: right;
+    margin: none;
+    padding: 20px 0px
+}
+     
+#menu ul{
+    text-align: center;
+    float: right;
+    margin: none;
+    
+}
+     
+#menu li{
+    display: inline-block;
+    padding: none;
+    margin: none;
+}
+     
+#menu li a, #menu li span{
+    display: inline-block;
+    padding: 0em 1.5em;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 60px;
+    font-family: Garamond, serif;
+}
+     
+#menu li a{
+         
+    color: rgb(13,60, 97) ;
+}
+     
+#menu li:hover a, #menu li span{
+    background: rgb(239,79 ,38) ;
+    color: rgb(13,60, 97);
+    border-left: 1px solid rgb(13,60, 97);
+    text-decoration: none;
+}
+
+
+#headerRect{
+  z-index:-1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right:0px;
+  background-image: linear-gradient(to left, rgb(211,211 ,211) , rgb(13,60, 97));
+}
+
+#headerRect2{
+  z-index:-1;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 85%;
+  background-image: linear-gradient(to left, rgb(211,211 ,211) , rgb(13,60, 97));
+}
+
+#button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-family: Garamond, serif;
+}
+
+.but1{
+  background-color: rgb(13,60, 97);
+  border: none;
+  color: rgb(211,211 ,211);
+  padding: 20px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Times New Roman", Times, serif;
+  font-family: Garamond, serif;
+}
+
+
+.bgSizeContain{
+  background-image: url(https://cdn.glitch.me/4836ddc0-1e6a-4032-b2fb-e2198fba4a5a%2Fadmissions-aid-hero2-1440x0-c-default.jpg?v=1633372835702);
+  background-size: cover;
+  height: 1000px;
+  position:relative;
+  top:120px;
+  opacity: 1;
+  z-index:-1;
+  
+}
+
+/*style calendar*/
+
+.timeContainer {
+  height: 90vh;
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  grid-template-rows: repeat(48, 1fr);
+  top:125px;
+  left:300px;
+  position:absolute;
+  grid-gap: 1px;
+  border: collapse;
+  text-align:center;
+  font-size:25px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.date{
+  font-size: 60px;
+  font-family: Garamond, serif;
+  background-color: rgb(13,60,97);
+  color:rgb(211,211,211)
+}
+
+.timestart-12am{
+  background-color:rgb(211,211,211);
+}
+
+.timestart-2am{
+  background-color:rgb(211,211,211);
+}
+
+.timestart-4am{
+  background-color:rgb(211,211,211);
+}
+
+.timestart-6am{
+  background-color:rgb(211,211,211);
+}
+
+.timestart-8am{
+  background-color:rgb(211,211,211);
+}
+
+.timestart-10am{
+  background-color:rgb(211,211,211);
+}
+
+.timestart-12pm{
+  background-color:rgb(211,211,211);
+}
+
+.timestart-2pm{
+  background-color:rgb(211,211,211);
+}
+
+.timestart-4pm{
+  background-color:rgb(211,211,211);
+}
+
+.timestart-6pm{
+  background-color:rgb(211,211,211);
+}
+
+.timestart-8pm{
+  background-color:rgb(211,211,211);
+}
+
+.timestart-10pm{
+  background-color:rgb(211,211,211);
+}
+
+.eventTitle{
+  font-size: 60px;
+  font-family: Garamond, serif;
+  background-color: rgb(13,60,97);
+  color:rgb(211,211,211)
+}
+
+.event{
+  background-color:rgb(211,211,211);
+}
+
+.eventButton{
+  background-color: rgb(239,79,38);
+  border:none;
+  top:135px;
+  left:5%;
+  position: absolute;
+  width: 150px;
+  height: 75px;
+  outline-style:initial;
+  border-radius: 100px;
+  cursor: pointer;
+  color:rgb(211,211,211);
+  font-family: Garamond, serif;
+}
+
+.eventButton:hover{
+  background-color:rgb(13,60, 97);
+  color:rgb(211,211,211);
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 10%;
+  left: 65%;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-height: 700px;
+  max-width: 400px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 20px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  width: 100%;
+  padding: 20px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: rgb(13,60,97);
+  color: rgb(211,211,211);
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-top:10px;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+#rectHolder{
+  background-color: rgb(211,211,211);
+}
+
+#rectHolder:hover{
+  background-color: rgb(13,60,97);
+}
+
+#rectHolder1{
+  background-color:rgb(255,255,255);
+}
+
+#rectHolder1:hover{
+  background-color: rgb(239,79 ,38);
+}
+
+#descriptionInput{
+  width:100%;
+}
